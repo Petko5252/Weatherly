@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Weather</h1>
+
+    <div class="search-box">
+      <input type="text" id="city-input" placeholder="Enter city name">
+      <button id="search-btn" aria-label="Search"><i data-lucide="search"></i></button>
+    </div>
+
+    <div class="weather-card">
+      <img id="icon" src="" alt="Weather Icon">
+      <h2 id="city">Fetching...</h2>
+      <p id="temp"></p>
+      <p id="desc"></p>
+    </div>
+
+    <button id="theme-toggle" aria-label="Toggle Theme">
+      <i id="theme-icon" data-lucide="moon"></i>
+    </button>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
